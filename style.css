@@ -1,0 +1,206 @@
+/* import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ text-decoration: none;
+}
+
+html {
+ scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+ width: 10px;
+}
+
+::-webkit-scrollbar-track {
+ background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+ background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+ background: #555;
+}
+
+/* css garaje de estilo */
+section {
+ padding: 100px 0;
+}
+
+.max-width {
+ margin: auto;
+ padding: 0 80px;
+ max-width: 1300px;
+}
+
+.about, .resume, .attributes, .contact, footer {
+ font-family: 'Rubik', sans-serif;
+}
+
+.about .about-content {
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.resume .resume-content {
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.skills .skills-content {
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.contact .contact-content {
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: space-between;
+}
+
+section .title {
+ position: relative;
+ text-align: center;
+ font-size: 40px;
+ font-weight: 500;
+ padding-bottom: 20px;
+ margin-bottom: 60px;
+ font-family:Arial, Helvetica, sans-serif
+}
+
+section .title::before {
+ content: "";
+ position: absolute;
+ bottom: 0px;
+ left: 50%;
+ height: 3px;
+ background: #111;
+ width: 180px;
+ transform: translateX(-50%);
+}
+
+section .title::after {
+ position: absolute;
+ bottom: -8px;
+ left: 50%;
+ font-size: 20px;
+ color: #aa0505;
+ background: #fff;
+ padding: 0 5px;
+ transform: translateX(-50%);
+}
+
+/* estilo de navegacion */
+.navbar {
+ position: fixed;
+ width: 100%;
+ z-index: 999;
+ padding: 30px 0;
+ font-family: Arial, Helvetica, sans-serif;
+ transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+ padding: 15px 0;
+ background: #aa0505;
+}
+
+.navbar .max-width {
+   justify-content: space-between;
+   display: flex;
+   align-items: center;
+}
+
+.navbar .logo a {
+ font-size: 35px;
+ font-weight: 600;
+ color: #fff;
+}
+
+.navbar .logo a span {
+ color: gold;
+ transition: all 0.3s ease;
+}
+
+.navbar.sticky .logo a span {
+ color: #fff;
+}
+
+.navbar .menu li {
+ list-style: none;
+ display: inline-block;
+}
+
+.navbar .menu li a {
+ display: block;
+ color: #fff;
+ font-size: 18px;
+ font-weight: 500;
+ margin-left: 25px;
+ transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+ color: #800000;
+}
+
+.navbar.sticky .menu li a:hover {
+ color: #fff;
+}
+
+/* boton de variantes */
+.menu-btn {
+ color: #fff;
+ cursor: pointer;
+ display: none;
+ font-size: 23px;
+}
+
+.scroll-up-btn {
+ position: fixed;
+ height: 45px;
+ width: 42px;
+ background: #800000;
+ bottom: 10px;
+ right: 30px;
+ text-align:center;
+ line-height: 45px;
+ color: #fff;
+ z-index: 9999;
+ font-size: 30px;
+ border-radius: 6px;
+ border-bottom-width: 2px;
+ cursor: pointer;
+ opacity: 0;
+ pointer-events: none;
+ transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show {
+ bottom: 30px;
+ pointer-events: auto;
+ opacity: 1;
+}
+
+.scroll-up-btn:hover {
+ filter: brightness(90%);
+}
+
+/* estilo de seccion mi casa jaja */
+.home {
+ display: flex;
+ background: url("./")
+}
