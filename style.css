@@ -282,3 +282,55 @@ section .title::after {
 .about .about-content .right p {
    text-align: justify;
 }
+
+.about .about-content .right .text span {
+   color:#aa0505
+}
+
+.about .about-content .right a {
+   display: inline-block;
+   color: #fff;
+   font-size: 20px;
+   font-weight: 500;
+   background:#aa0505;
+   padding: 10px 30px;
+   margin-top: 20px;
+   border-radius: 6px;
+   border: 2px solid #aa0505;
+   transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover {
+   background: none;
+   color: #aa0505;
+}
+
+/* seccion de servicio */
+.services, .teams {
+   background: #111;
+   color: #fff;
+}
+
+.services .title::before,
+.teams .title::before {
+   background: #fff;
+}
+
+.services .title::after,
+.teams .title::after {
+   background: #111;
+   content: "what i provide";
+}
+
+.services .serv-content .card {
+   width: calc(33% - 25px);
+   text-align: center;
+   border-radius: 6px;
+   padding: 50px 25px;
+   background: #222;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background-size: contain;
+   background: #aa0505;
+   background-position: center;
+}
