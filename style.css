@@ -334,3 +334,28 @@ section .title::after {
    background: #aa0505;
    background-position: center;
 }
+
+.services .serv-content .card:hover {
+   background-image: url(images/jamestribe.png);
+}
+
+.services .serv-content .card .box {
+   transform: scale(1.05);
+}
+
+.services .serv-content .card i {
+   font-size: 50px;
+   color: #aa0505;
+   transition: color 0.3s ease;
+}
+
+.services .serv-content .card:hover i{
+   color: #fff;
+}
+
+.services .serv-content .card .text {
+   font-size: 25px;
+   font-weight: 500;
+   margin: 10px 0 7px 0;
+}
+
